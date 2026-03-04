@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Noto Serif TC", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .svg-mask-blob {
+    mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23000' d='M44.7,-76.4C58.8,-69.2,71.8,-59.1,81.3,-46.3C90.8,-33.5,96.8,-18,96.5,-2.8C96.2,12.4,89.6,27.3,80.1,39.8C70.6,52.3,58.2,62.4,44.6,70.1C31,77.8,16.2,83.1,1.1,81.3C-14,79.5,-28.5,70.6,-41.8,61.4C-55.1,52.2,-67.2,42.7,-75.4,30.4C-83.6,18.1,-87.9,3,-86.3,-11.6C-84.7,-26.2,-77.2,-40.3,-66.4,-51.1C-55.6,-61.9,-41.5,-69.4,-27.8,-74.8C-14.1,-80.2,-0.8,-83.5,13.2,-81.9C27.2,-80.3,41.4,-73.8,44.7,-76.4Z' transform='translate(100 100)' /%3E%3C/svg%3E");
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+  }
+  .glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  .soft-shadow {
+    box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.05);
+  }
+}
+
+html, body {
+  overflow-x: hidden;
+  background-color: #F8FAFC; /* slate-50 */
+  color: #0F172A; /* slate-900 */
+}
