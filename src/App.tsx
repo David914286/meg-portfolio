@@ -210,7 +210,7 @@ export default function App() {
               立即預約 <ArrowRight className="w-5 h-5" />
             </MagneticButton>
             <MagneticButton 
-              href="/resume.pdf"
+              href="https://drive.google.com/file/d/1L34H6duFqHimXu7xQhqnRMHX395LETKP/view?usp=sharing"
               className="px-8 py-4 bg-white border border-slate-200 text-slate-700 rounded-full font-medium tracking-wide shadow-sm hover:bg-slate-50 transition-colors"
             >
               個人簡歷 <FileText className="w-5 h-5" />
